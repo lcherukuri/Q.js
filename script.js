@@ -22,9 +22,13 @@
     // Q.js should support get and set text content
     Q('p.author').text('Lokesh Cherukuri');
 
-    // Q.js should support event listeners
-    Q('.button').on('click', function() {
-        alert('Button Clicked');
-    });
+    // Q.js should support event listeners and chaining of events
+    Q('.button')
+        .on('click', function() {
+            Q('.event-status').text('Button Clicked');
+        })
+        .on('mouseover', function() {
+            Q('.event-status').text('Mouse hovered on button');
+        });
 
 })();
