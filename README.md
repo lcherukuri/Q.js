@@ -1,2 +1,2 @@
 # Q.js
-Writing my version of jQuery
+Write your own version of jQuery
