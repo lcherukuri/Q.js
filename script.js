@@ -38,9 +38,7 @@
         method: 'GET',
         URL: 'https://httpbin.org/get'
     }).done(function(response) {
-        console.log("Ajax Done-1", response);
-    }).done(function(response) {
-        console.log("Ajax Done-2", response);
+        console.log("Ajax Call-1", response);
     }).fail(function(error) {
         console.log(error);
     });
